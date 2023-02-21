@@ -16,8 +16,11 @@ body {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   transition: background-image 1s ease-in-out;
 }
 
@@ -41,6 +44,10 @@ body {
 
 .play-list {
   text-align: left;
+}
+
+.play-now {
+  text-decoration: wavy underline;
 }
 
 .play-item {
@@ -116,6 +123,14 @@ body {
 
 .play-next {
   background-image: url("../assets/svg/play-next.svg");
+}
+
+.language {
+  margin-top: 20px;
+}
+
+.language:hover {
+  cursor: pointer;
 }
 
 .weather {
@@ -223,7 +238,7 @@ body {
   text-align: right;
 }
 
-.name {
+.names {
   flex: 1;
   max-width: 50%;
   padding: 10px;
@@ -235,7 +250,7 @@ body {
   outline: 0;
 }
 
-.name::placeholder {
+.names::placeholder {
   color: #fff;
   opacity: .6;
 }
@@ -279,7 +294,7 @@ body {
     padding: 5px;
   }
 
-  .name {
+  .names {
     font-size: 32px;
     padding: 5px;
   }
