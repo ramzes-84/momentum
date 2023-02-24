@@ -38,8 +38,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
+  width: 150px;
   margin-bottom: 28px;
+}
+
+.player {
+  transition: 2s;
 }
 
 .play-list {
@@ -125,8 +129,49 @@ body {
   background-image: url("../assets/svg/play-next.svg");
 }
 
+.sound-off {
+  background-image: url("../assets/svg/sound.png");
+}
+
 .language {
   margin-top: 20px;
+}
+
+.settings-icon {
+  width: 48px;
+  height: 48px;
+  background-size: 48px 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: .8;
+  cursor: pointer;
+  transition: .3s;
+  background-image: url("../assets/svg/settings.svg");
+}
+
+.settings-container {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: #fff;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.settings_item {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.hidden {
+  opacity: 0;
+  z-index: -1;
+  transition: 2s;
 }
 
 .language:hover {
@@ -140,8 +185,9 @@ body {
   align-items: flex-start;
   row-gap: 5px;
   width: 180px;
-  min-height: 180px;  
+  min-height: 180px;
   text-align: left;
+  transition: 2s;
 }
 
 .weather-error {
@@ -213,13 +259,15 @@ body {
   margin-bottom: 10px;
   font-family: 'Arial-MT';
   font-size: 100px;
-  letter-spacing: -4px;  
+  letter-spacing: -4px;
+  transition: 2s;
 }
 
 .date {
   min-height: 28px;
   font-size: 24px;
   margin-bottom: 20px;
+  transition: 2s;
 }
 
 .greeting-container {
@@ -230,6 +278,7 @@ body {
   min-height: 48px;
   width: 100vw;
   font-size: 40px;
+  transition: 2s;
 }
 
 .greeting {
@@ -267,12 +316,16 @@ body {
 }
 
 .change-quote {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background-image: url("../assets/svg/reload.svg");  
 }
 
 .quote {
   min-height: 32px;
+}
+
+.quote-container {
+  transition: 2s;
 }
 
 .author {
