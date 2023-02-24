@@ -15,6 +15,7 @@
         <button class="play-prev player-icon"></button>
         <button class="play player-icon"></button>
         <button class="play-next player-icon"></button>
+        <button class="sound-off player-icon"></button>
       </div>
       <ul class="play-list"></ul>
     </div>
@@ -43,13 +44,36 @@
     </div>
   </main>
   <footer class="footer">
-    <button class="change-quote"></button>
-    <div>
-      <div class="quote"></div>
-      <div class="author"></div>
+    <div class="quote-container">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
     </div>
     <div class="language">
-      <span class="rus">РУС</span> / <span class="eng">ENG</span>
+      <button class="settings-icon player-icon"></button>
+      <div class="settings-container hidden">
+        <div class="settings_item"><span class="rus">РУС</span> / <span class="eng">ENG</span></div>
+        <div class="settings_item">
+          <input type="checkbox" name='time' checked> Показывать время<Br>
+        </div>
+        <div class="settings_item">
+          <input type="checkbox" name='date' checked> Показывать дату<Br>
+        </div>
+        <div class="settings_item">
+          <input type="checkbox" name='greeting-container' checked> Показывать приветствие<Br>
+        </div>
+        <div class="settings_item">
+          <input type="checkbox" name='quote-container' checked> Показывать цитаты<Br>
+        </div>
+        <div class="settings_item">
+          <input type="checkbox" name='weather' checked> Показывать погоду<Br>
+        </div>
+        <div class="settings_item">
+          <input type="checkbox" name='player' checked> Показывать плеер<Br>
+        </div>
+      </div>
     </div>
   </footer>
   <script type="module" src="./js/script.js"></script>
